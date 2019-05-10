@@ -1,0 +1,313 @@
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    max-width: calc(100% - 4.5em);
+    width: 45em;
+}
+
+    .container.xsmall {
+        width: 11.25em;
+    }
+
+    .container.small {
+        width: 22.5em;
+    }
+
+    .container.medium {
+        width: 33.75em;
+    }
+
+    .container.large {
+        width: 56.25em;
+    }
+
+    .container.xlarge {
+        width: 67.5em;
+    }
+
+    .container.max {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        .container {
+            width: 100% !important;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .container {
+            max-width: calc(100% - 3.375em);
+        }
+
+    }
+
+
+/* Section/Article */
+
+section.special, article.special {
+    text-align: center;
+}
+
+header p {
+    color: #aaa;
+    position: relative;
+    margin: 0 0 1.6875em 0;
+}
+
+header h2 + p {
+    font-size: 1.25em;
+    margin-top: -0.5em;
+    line-height: 1.5em;
+}
+
+header h3 + p {
+    font-size: 1.1em;
+    margin-top: -0.35em;
+    line-height: 1.5em;
+}
+
+header h4 + p,
+header h5 + p,
+header h6 + p {
+    font-size: 0.9em;
+    margin-top: -0.25em;
+    line-height: 1.5em;
+}
+
+header.major h2 {
+    color: #04404b;
+    font-size: 3.5em;
+}
+
+    header.major h2 + p {
+        color: #777;
+        font-size: 1.75em;
+        font-weight: 700;
+        margin-top: -0.75em;
+    }
+
+/* Features */
+
+.features article {
+    border-top: solid 3px #f4f4f4;
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
+}
+
+    .features article:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .features article .image {
+        display: inline-block;
+        padding-right: 2.5em;
+        vertical-align: middle;
+        width: 48%;
+    }
+
+        .features article .image img {
+            display: block;
+            width: 100%;
+        }
+
+    .features article .inner {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+        .features article .inner > :last-child {
+            margin-bottom: 0;
+        }
+
+/* Header */
+
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background: #04404b;
+    color: #d2f2e9;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 23em;
+    right: 0;
+}
+
+    #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+        color: #ffffff;
+    }
+
+        #header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
+            color: #ffffff;
+        }
+
+    #header header p {
+        color: #b7eadc;
+    }
+
+    #header a {
+        color: #d2f2e9;
+    }
+
+        #header a:hover {
+            color: #ffffff !important;
+        }
+
+    #header > header {
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        padding: 3em;
+    }
+
+        #header > header .avatar {
+            display: block;
+            margin: 0 auto 2.25em auto;
+            width: 8em;
+        }
+
+        #header > header h1 {
+            font-size: 1.75em;
+            margin: 0;
+        }
+
+        #header > header p {
+            color: #d2f2e9;
+            font-style: italic;
+            margin: 1em 0 0 0;
+        }
+
+    #header > footer {
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2em;
+        width: 100%;
+    }
+
+        #header > footer .icons {
+            margin: 0;
+        }
+
+            #header > footer .icons li a {
+                color: #b7eadc;
+            }
+
+    #header > nav {
+        -moz-flex-grow: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-grow: 1;
+        flex-grow: 1;
+    }
+
+        #header > nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            #header > nav ul li {
+                border-top: solid 2px #5ccfb1;
+                display: block;
+                padding: 0;
+            }
+
+                #header > nav ul li a {
+                    -moz-transition: none;
+                    -webkit-transition: none;
+                    -ms-transition: none;
+                    transition: none;
+                    border: 0;
+                    color: #ffffff !important;
+                    display: block;
+                    padding: 0.85em 0;
+                    text-decoration: none;
+                }
+
+                    #header > nav ul li a.active {
+                        background: #fff;
+                        color: #04404b !important;
+                    }
+
+                #header > nav ul li:first-child {
+                    border-top: 0;
+                }
+
+/* Wrapper */
+
+#wrapper {
+    background: #fff;
+    padding-right: 23em;
+}
+
+/* Main */
+
+#main > section {
+    border-top: solid 6px #f4f4f4;
+}
+
+    #main > section > .container {
+        padding: 6em 0 4em 0;
+    }
+
+    #main > section:first-child {
+        border-top: 0;
+    }
+
+/* Footer */
+
+#footer {
+    background: #fafafa;
+    border-top: 0;
+    color: #c0c0c0;
+    overflow: hidden;
+    padding: 4em 0 2em 0;
+}
+
+    #footer .copyright {
+        line-height: 1em;
+        list-style: none;
+        padding: 0;
+    }
+
+        #footer .copyright li {
+            border-left: solid 1px #d4d4d4;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-left: 1em;
+            padding-left: 1em;
+        }
+
+            #footer .copyright li:first-child {
+                border-left: 0;
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+            #footer .copyright li a {
+                color: inherit;
+            }
