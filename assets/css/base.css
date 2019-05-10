@@ -214,7 +214,8 @@ input, select, textarea {
 	pre {
 		font-family: "Source Code Pro", monospace;
 		font-size: 0.9em;
-		margin: 0 0 2.25em 0;
+        margin: 0 0 2.25em 0;
+        
 	}
 
 		pre code {

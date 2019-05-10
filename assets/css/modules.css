@@ -33,15 +33,17 @@
         -webkit-object-fit: cover;
         -ms-object-fit: cover;
         object-fit: cover;
-        display: block;
+        /* display: flex;
+        flex-flow: wrap;
+        justify-content: flex-end; */
         position: absolute;
         top: 0;
-        left: 0;
+        left: 34%;
         width: 100%;
         height: 100%;
     }
 
-    .image[data-position="top left"] img {
+    /* .image[data-position="top left"] img {
         -moz-object-position: top left;
         -webkit-object-position: top left;
         -ms-object-position: top left;
@@ -130,7 +132,7 @@
         -webkit-object-position: 25% 75%;
         -ms-object-position: 25% 75%;
         object-position: 25% 75%;
-    }
+    } */
 
     .image img {
         border-radius: 5px;

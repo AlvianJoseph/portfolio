@@ -5,6 +5,7 @@
     margin: 0 auto;
     max-width: calc(100% - 4.5em);
     width: 45em;
+    
 }
 
     .container.xsmall {
@@ -150,7 +151,7 @@ header.major h2 {
     text-align: center;
     top: 0;
     width: 23em;
-    right: 0;
+    left: 0;
 }
 
     #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
