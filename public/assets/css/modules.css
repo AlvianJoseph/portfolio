@@ -1,3 +1,25 @@
+
+/* Box */
+
+.box {
+    border-radius: 5px;
+    border: solid 2px #e4e4e4;
+    margin-bottom: 2.25em;
+    padding: 1.5em;
+}
+
+    .box > :last-child,
+    .box > :last-child > :last-child,
+    .box > :last-child > :last-child > :last-child {
+        margin-bottom: 0;
+    }
+
+    .box.alt {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
 /* Icon */
 
 .icon {
@@ -33,7 +55,7 @@
         -webkit-object-fit: cover;
         -ms-object-fit: cover;
         object-fit: cover;
-        display: flex;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -41,7 +63,7 @@
         height: 100%;
     }
 
-    /* .image[data-position="top left"] img {
+    .image[data-position="top left"] img {
         -moz-object-position: top left;
         -webkit-object-position: top left;
         -ms-object-position: top left;
@@ -130,7 +152,7 @@
         -webkit-object-position: 25% 75%;
         -ms-object-position: 25% 75%;
         object-position: 25% 75%;
-    } */
+    }
 
     .image img {
         border-radius: 5px;
@@ -473,14 +495,14 @@ input[type="button"],
         input[type="reset"].primary:hover,
         input[type="button"].primary:hover,
         .button.primary:hover {
-            background-color: #04404b;
+            background-color: #5ed0b1;
         }
 
         input[type="submit"].primary:active,
         input[type="reset"].primary:active,
         input[type="button"].primary:active,
         .button.primary:active {
-            background-color: #04404b;
+            background-color: #39c29d;
         }
 
     input[type="submit"].disabled, input[type="submit"]:disabled,
